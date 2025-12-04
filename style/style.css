@@ -1,0 +1,33 @@
+body{
+    background-color: #fbfcfe;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    gap: 2rem
+}
+a{
+    text-decoration: none;
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 3em 4em;
+}
+header ul li{
+    justify-content: center;
+}
+header button{
+    background: #ba4270;
+    color: #fbfcfe;
+    border-style: none;
+    padding: 0.7rem 1.5rem;
+}
+header ul li a{
+    color: #6c8294;
+}
