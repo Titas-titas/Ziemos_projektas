@@ -1,5 +1,5 @@
 body{
-    background-color: #fbfcfe;
+    background-color: #EDF3F8;
     margin: 0;
 }
 ul{
@@ -26,15 +26,58 @@ header button{
     color: #fbfcfe;
     border-style: none;
     padding: 0.7rem 1.5rem;
+    border-radius: 2em;
+    width: 175px;
 }
 header ul li a{
     color: #6c8294;
 }
 .nav-left-header {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 9rem;
+    gap: 2rem;
+}
+.main-header__get-started {
+    display: flex;
+    max-width: 500px;
+    flex-direction: column;
+    gap: 1.5rem;
+    color:#6c8294;
+}
+.main-header__get-started h1{
+    color:#36536B;
+    font-size: 3.8em;
+}
+.main-header__get-started a{
+    color:#6c8294;
+}
+.main-header__input {
+    display: flex;
+}
+.main-header__input input[type="email"] {
+    border-style: none;
+    box-shadow: #6c8294 1px 1px 5px;
+    border-radius: 2em 0em 0em 2em;
+    padding: 1.20em;
+}
+.main-header__input input[type="submit"] {
+    background-color: #ba4270;
+    color: #fbfcfe;
+    box-shadow: #6c8294 1px 1px 5px;
+    border-style: none;
+    border-radius: 2em;
+    padding: 1em;
+}
+
+
 
 footer{
     display: flex;
