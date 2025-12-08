@@ -9,9 +9,34 @@ ul{
 }
 a{
     text-decoration: none;
+    font-weight: bold;
+}
+button, input{
+    font-weight: bold;
 }
 
-
+.main-header__input input[type="submit"]:hover, .fourth-main__input input[type="submit"]:hover,header button:hover{
+    background-color: #da6d97;
+}
+.first-main__text button:hover{
+    color: #1b262f;
+    background-color: #fbfcfe;
+}
+header ul li a:hover{
+    color: #36536B;
+}
+.footer-links a svg path:hover{
+    fill: #da6d97;
+}
+.nav-left-footer ul li a:hover{
+    color: #fbfcfe;
+}
+.main-header__input input[type="email"]:hover, .fourth-main__input input[type="email"]:hover{
+    color: #36536B;
+}
+.main-header__input input[type="email"]:focus, .fourth-main__input input[type="email"]:focus{
+    color: #36536B;
+}
 
 header{
     display: flex;
@@ -50,14 +75,14 @@ header ul li a{
     max-width: 500px;
     flex-direction: column;
     gap: 1.5rem;
-    color:#6c8294;
+    color:#36536B;
 }
 .main-header__get-started h1{
     color:#36536B;
     font-size: 3.8em;
 }
 .main-header__get-started a{
-    color:#6c8294;
+    color:#36536B;
 }
 .main-header__input {
     display: flex;
@@ -65,6 +90,7 @@ header ul li a{
 .main-header__input input[type="email"] {
     border-style: none;
     box-shadow: #6c8294 1px 1px 5px;
+    color: #6c8294;
     border-radius: 2em 2em 2em 2em;
     padding: 1.20em;
 }
@@ -104,7 +130,7 @@ header ul li a{
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    grid-template-rows: repeat(2, auto);
-   gap: 2rem;
+   gap: 1rem;
    justify-items: center;
    align-items: center;
 }
@@ -122,7 +148,7 @@ header ul li a{
     padding: 1em;
 }
 .main-card div p, .second-main__text p, .third-main__text{
-    color: #6c8294;
+    color: #36536B;
 }
 .main-card div p:first-of-type{
     font-weight: bold;
@@ -140,6 +166,7 @@ header ul li a{
 .fourth-main__input input[type="email"] {
     border-style: none;
     box-shadow: #6c8294 1px 1px 5px;
+    color: #6c8294;
     border-radius: 2em 2em 2em 2em;
     width: 250px;
     padding: 1.20em;
@@ -168,13 +195,10 @@ footer{
     fill: #fbfcfe;
 }
 .nav-left-footer ul li a{
-    color: #fbfcfe;
+    color: #6c8294;
 }
 .footer-links {
   display: flex;
   gap: 1.5rem;
   align-items:center;
-}
-.footer-links a svg{
-    fill: #fbfcfe;
 }
