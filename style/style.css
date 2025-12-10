@@ -23,7 +23,7 @@ button, input{
     background-color: #fbfcfe;
 }
 header ul li a:hover{
-    color: #36536B;
+    color: #36536b;
 }
 .footer-links a svg path:hover{
     fill: #da6d97;
@@ -32,12 +32,12 @@ header ul li a:hover{
     color: #fbfcfe;
 }
 .main-header__input input[type="email"]:hover, .fourth-main__input input[type="email"]:hover{
-    color: #36536B;
+    color: #36536b;
 }
 .main-header__input input[type="email"]:focus, .fourth-main__input input[type="email"]:focus{
-    color: #36536B;
+    color: #36536b;
 }
-
+/*//////////////////////////////////////////*/
 header{
     display: flex;
     justify-content: space-between;
@@ -62,7 +62,7 @@ header ul li a{
     align-items: center;
     gap: 2rem;
 }
-
+/*//////////////////////////////////////////*/
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -75,14 +75,14 @@ header ul li a{
     max-width: 500px;
     flex-direction: column;
     gap: 1.5rem;
-    color:#36536B;
+    color:#36536b;
 }
 .main-header__get-started h1{
-    color:#36536B;
+    color:#36536b;
     font-size: 3.8em;
 }
 .main-header__get-started a{
-    color:#36536B;
+    color:#36536b;
 }
 .main-header__input {
     display: flex;
@@ -102,7 +102,7 @@ header ul li a{
     border-radius: 2em;
     padding: 1em;
 }
-
+/*//////////////////////////////////////////*/
 .first-main,
 .second-main,
 .third-main,
@@ -121,7 +121,7 @@ header ul li a{
 }
 .second-main__text h2, .third-main__text h2, .fourth-main__text h2{
     font-size: 2.3rem;
-    color: #36536B;
+    color: #36536b;
 }
 .first-main__text h2{
     font-size: 2.3rem;
@@ -179,7 +179,91 @@ header ul li a{
     border-radius: 2em;
     padding: 1em;
 }
-
+/*//////////////////////////////////////////*/
+.main__test{
+    padding: 1rem 5em;
+}
+.main__test h1{
+    color: #36536b;
+    font-size: 3.5em;
+    width: 700px;
+}
+.form-filling {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+  padding: 4rem 5rem
+}
+form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 50vw;
+}
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  padding: 1rem;
+  font-size: 1rem;
+  width: 100%;
+  font-weight: normal;
+  color: #6c8294;
+  background-color: #EDF3F8;
+  border-style: none;
+  border-bottom: 1px solid #36536b;
+}
+form textarea {
+  resize: none;
+}
+form input[type="submit"] {
+  background-color: #EDF3F8;
+  color: #36536b;
+  border: 1px solid #36536b;
+  padding: 1em;
+  border-radius: 20px;
+  width: 200px;
+}
+form label{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+form span{
+    color: #36536b;
+    font-size: 1.1rem;
+}
+form input[type="checkbox"]{
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    color: #6c8294;
+}
+.form-filling__img-and-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.4rem;
+    padding: 5em 4em;
+}
+.form-filling__img-and-text h3{
+    color: #6c8294;
+    font-size: 2em;
+}
+.form-filling__img-and-text div{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(2, auto);
+   justify-items: center;
+   align-items: center;
+   gap: 0.5rem;
+   padding: 0.1em;
+   max-width: 50vw;
+}
+/*//////////////////////////////////////////*/
 footer{
     display: flex;
     background-color: #1b262f;
@@ -187,9 +271,9 @@ footer{
     padding: 2em 5em;
 }
 .nav-left-footer {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
 .nav-left-footer svg path{
     fill: #fbfcfe;
