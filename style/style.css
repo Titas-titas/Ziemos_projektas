@@ -31,11 +31,12 @@ header ul li a:hover{
 .nav-left-footer ul li a:hover{
     color: #fbfcfe;
 }
-.main-header__input input[type="email"]:hover, .fourth-main__input input[type="email"]:hover{
+.main-header__input input[type="email"]:hover, .fourth-main__input input[type="email"]:hover, .main-header__input input[type="email"]:focus, .fourth-main__input input[type="email"]:focus, form input[type="text"]:hover,form input[type="email"]:hover,form textarea:hover{
     color: #36536b;
 }
-.main-header__input input[type="email"]:focus, .fourth-main__input input[type="email"]:focus{
-    color: #36536b;
+.form-filling input[type="submit"]:hover{
+    color: #EDF3F8;
+    background-color: #36536b;
 }
 /*//////////////////////////////////////////*/
 header{
@@ -213,6 +214,9 @@ form textarea {
   background-color: #EDF3F8;
   border-style: none;
   border-bottom: 1px solid #36536b;
+}
+#announcements{
+    accent-color: #ba4270;
 }
 form textarea {
   resize: none;
