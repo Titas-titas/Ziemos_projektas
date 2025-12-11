@@ -118,7 +118,6 @@ header ul li a{
 .first-main{
     background-color: #1b262f;
     color: #fbfcfe;
-
 }
 .second-main__text h2, .third-main__text h2, .fourth-main__text h2{
     font-size: 2.3rem;
@@ -323,6 +322,63 @@ form input[type="checkbox"]{
     font-weight: bold;
     color: #6c8294;
 }
+/*//////////////////////////////////////////*/
+.pricing-main__cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+  padding: 2rem;
+}
+.pricing-main h1{
+    margin: 2em;
+    font-size: 3rem;
+    color: #36536b;
+}
+.price-card{
+    margin: 2em;
+}
+.price-card h1{
+    margin: 0;
+    margin-bottom: 1em;
+}
+.price-card h3{
+  color:#ba4270;
+  font-size: 2em;
+}
+.price-card p{
+  color:#6c8294;
+  font-size: 1.1em;
+}
+.price-card ul{
+    display: block;
+    margin: 0;
+}
+.price-card div{
+    border-top: 1px solid #6c8294;
+    border-bottom: 1px solid #6c8294;
+    padding: 1em;
+}
+.price-card div ul li{
+    padding: 0.7em;
+    font-size: 1.1em;
+}
+.price-card div .price-card__active{
+    color: #36536b;
+    list-style-image: url('/img/shared/desktop/icon-check.svg');
+}
+.price-card div .price-card__unactive{
+    color: #6c8294;
+}
+.price-card button{
+    background-color: #EDF3F8;
+    color: #36536b;
+    border: 2px solid #36536b;
+    margin: 2em;
+    border-radius: 2em;
+    padding: 1rem;
+    width: 150px;
+}
+
 /*//////////////////////////////////////////*/
 footer{
     display: flex;
