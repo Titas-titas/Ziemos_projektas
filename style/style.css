@@ -34,7 +34,7 @@ header ul li a:hover{
 .main-header__input input[type="email"]:hover, .fourth-main__input input[type="email"]:hover, .main-header__input input[type="email"]:focus, .fourth-main__input input[type="email"]:focus, form input[type="text"]:hover,form input[type="email"]:hover,form textarea:hover{
     color: #36536b;
 }
-.form-filling input[type="submit"]:hover{
+.form-filling input[type="submit"]:hover, .price-card button:hover{
     color: #EDF3F8;
     background-color: #36536b;
 }
