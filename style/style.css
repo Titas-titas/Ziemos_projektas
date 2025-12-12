@@ -1,3 +1,8 @@
+@import url('/style/about.css');
+@import url('/style/pricing.css');
+@import url('/style/hover.css');
+@import url('/style/contact.css');
+@import url('/style/index.css');
 body{
     background-color: #EDF3F8;
     margin: 0;
