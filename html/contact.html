@@ -27,11 +27,27 @@
             </div>
             <div class="form-filling">
               <form>
-                <input type="text" id="name" placeholder="name">
-                <input type="email" name="email" id="email" placeholder="Email Address">
-                <input type="text" id="companyName" placeholder="Company Name">
-                <input type="text" id="title" placeholder="Title">
-                <textarea name="message" id="message" placeholder="Message"></textarea>
+                <div>
+                  <input type="text" id="name" placeholder="name">
+                  <span class="hidden invalid" id="invalid-name" >This field can't be empty</span>
+                </div>
+                <div>
+                  <input type="email" name="email" id="email" placeholder="Email Address">
+                  <span class="hidden invalid" id="invalid-email">This field can't be empty</span>
+                  <span class="hidden invalid" id="email-error">This email is invalid</span>
+                </div>
+                <div>
+                  <input type="text" id="companyName" placeholder="Company Name">
+                  <span class="hidden invalid" id="invalid-company">This field can't be empty</span>
+                </div>
+                <div>
+                  <input type="text" id="title" placeholder="Title">
+                  <span class="hidden invalid" id="invalid-title">This field can't be empty</span>
+                </div>
+                <div>
+                  <textarea name="message" id="message" placeholder="Message"></textarea>
+                  <span class="hidden invalid" id="invalid-message">This field can't be empty</span>
+                </div>
                   <label for="announcements">
                     <input type="checkbox" name="announcements" id="announcements">
                     <span>Stay up-to-date with company announcements and updates to our API</span>
