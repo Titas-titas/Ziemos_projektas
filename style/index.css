@@ -1,6 +1,7 @@
 /*  main header*/
 .main-header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 2rem 9rem;
@@ -39,7 +40,6 @@
     padding: 1em;
 }
 /* main */
-.first-main,
 .second-main,
 .third-main{
   display: flex;
@@ -52,6 +52,11 @@
 .first-main{
     background-color: #1b262f;
     color: #fbfcfe;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 5rem;
+    gap: 4rem;
 }
 .second-main__text h2, .third-main__text h2, .main-footer__text h2{
     font-size: 2.3rem;
@@ -94,4 +99,42 @@
 }
 .main-card{
     margin: 1em;
+}
+
+/* tablet */
+@media (max-width:768px) {
+    .main-header__get-started h1{
+        font-size: 2.7em;
+    }
+    .main-header__input input[type="email"] {
+        padding: 1.5em;
+    }
+    .main-header__input input[type="submit"] {
+        padding: 1.3em;
+    }
+    .main-header__started-img img{
+        width: 400px;
+    }
+    .second-main__img img, .third-main__img img{
+        width: 500px;
+    }
+    .main-header, .first-main, .third-main{
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 0em;
+    }
+    .first-main__text button{
+        padding: 1.3em;
+    }
+    .second-main, .main-footer{
+        flex-direction: column;
+        text-align: center;
+        gap: 0em;
+    }
+    .main-header__get-started {
+        align-items: center;
+    }
+    .main-card{
+        margin: 0.5em;
+    }
 }
