@@ -22,7 +22,7 @@
 }
 .price-card p{
   color:#6c8294;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 .price-card ul{
     display: block;
@@ -52,4 +52,20 @@
     border-radius: 2em;
     padding: 1rem;
     width: 150px;
+}
+
+@media (max-width:768px) {
+    .pricing-main{
+        text-align: center;
+    }
+    .pricing-main__cards {
+        gap:1em;
+        padding: 1em;
+    }
+    .price-card {
+        margin: 0em;
+    }
+    .price-card p{
+        font-size: 1em;
+    }
 }
