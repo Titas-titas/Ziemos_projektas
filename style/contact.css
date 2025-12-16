@@ -1,7 +1,7 @@
-.main__test{
+.main__text{
     padding: 1rem 5em;
 }
-.main__test h1{
+.main__text h1{
     color: #36536b;
     font-size: 3.5em;
     width: 700px;
@@ -91,4 +91,42 @@ form input[type="checkbox"]{
    gap: 0.5rem;
    padding: 0.1em;
    max-width: 50vw;
+}
+
+/* tablet */
+@media (max-width:768px) {
+    .main__text h1{
+        margin: 2em 1em 0em 1em;
+        font-size: 3rem;
+        width: auto;
+    }
+    .main__text {
+        padding: 0em;
+        text-align: center;
+    }
+    .form-filling {
+        display: block;
+        text-align: center;
+    }
+    form{
+        gap: 0.5rem;
+        max-width: none;
+    }
+    form div{
+        width: 100%;
+    }
+    form label{
+        text-align: left;
+        margin: 1em 0em;
+    }
+    form input[type="submit"] {
+        padding: 1.2em;
+        border-radius: 25px;
+    }
+    .form-filling__img-and-text {
+        padding: 3em 0em;
+    }
+    .form-filling__img-and-text div {
+        max-width: none;
+    }
 }
