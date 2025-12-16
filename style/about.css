@@ -45,11 +45,28 @@
 }
 .about-main__card h1 {
     font-size: 2.5rem;
-    margin: 0em;
+    margin: 0em !important;
     color: #ba4270;
 }
 .about-main__card p {
     font-size: 1rem;
     font-weight: bold;
     color: #6c8294;
+}
+
+@media (max-width:768px) {
+    .about-main h1 {
+        margin: 1em;
+        font-size: 2.7rem;
+        text-align: center;
+    }
+    .about-main__section {
+        padding: 2rem 4rem;
+    }
+    .about-main__card h1{
+        text-align: start;
+    }
+    .about-main__card div{
+        width: 25vw;
+    }
 }
