@@ -14,11 +14,12 @@
     justify-content: space-between;
     gap: 4rem;
     padding: 2rem 6rem;
-    max-width: 1000px;
     margin: auto;
+    max-width: 1000px;
 }
 .about-main__section h3{
     font-size: 1.7em;
+    width: 165px;
 }
 .about-main__img img {
     width: 100%;
@@ -27,7 +28,6 @@
 .about-main__section p {
     line-height: 1.6em;
     color: #6c8294;
-    width: 700px;
 }
 
 .about-main__card{
