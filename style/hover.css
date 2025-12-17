@@ -1,17 +1,17 @@
-.main-header__input input[type="submit"]:hover, .fourth-main__input input[type="submit"]:hover,header button:hover{
+.main-header__input input[type="submit"]:hover, .fourth-main__input input[type="submit"]:hover, .demo-btn:hover{
     background-color: #da6d97;
 }
 .first-main__text button:hover{
     color: #1b262f;
     background-color: #fbfcfe;
 }
-header ul li a:hover{
+.nav-menu li a:hover{
     color: #36536b;
 }
 .footer-links a svg path:hover{
     fill: #da6d97;
 }
-.nav-left-footer ul li a:hover{
+.nav-footer li a:hover{
     color: #fbfcfe;
 }
 .main-header__input input[type="email"]:hover, .fourth-main__input input[type="email"]:hover, .main-header__input input[type="email"]:focus, .fourth-main__input input[type="email"]:focus, form input[type="text"]:hover,form input[type="email"]:hover,form textarea:hover{

@@ -13,11 +13,7 @@ body{
 h1,h2,h3{
     font-family: "DM Serif Display";
 }
-ul{
-    display: flex;
-    list-style-type: none;
-    gap: 2rem
-}
+
 a{
     text-decoration: none;
     font-weight: bold;
@@ -29,20 +25,59 @@ button, input{
 header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 3em 4em;
+    position: relative;
 }
-header ul li{
+.nav-menu{
+    display: flex;
+    list-style-type: none;
+    gap: 2rem
+}
+.nav-menu li{
     justify-content: center;
 }
-header button{
+.nav-menu__demo-btn{
+    display: none;
+    margin: auto;
+    background-color: #ba4270;
+    color: #fbfcfe;
+    border-style: none;
+    padding: 1rem 1.5rem;
+    border-radius: 2em;
+    width: 100%;
+}
+.demo-btn{
     background-color: #ba4270;
     color: #fbfcfe;
     border-style: none;
     padding: 0.7rem 1.5rem;
     border-radius: 2em;
+    margin: 0em 1em;
     width: 175px;
 }
-header ul li a{
+.sidebar hr{
+    display: none;
+    color: #6c8294;
+}
+.menu-toggle { 
+    display: none;
+    background: none; 
+    border: none;
+}
+.menu-close { 
+    display: none;
+    background: none; 
+    border: none;
+    margin-left: auto;
+}
+.menu-toggle img{ 
+    width: 35px;
+}
+.menu-close img{ 
+    width: 25px;
+}
+.nav-menu li a{
     color: #6c8294;
 }
 .nav-left-header {
@@ -90,10 +125,15 @@ footer{
     align-items: center;
     gap: 2rem;
 }
+.nav-footer{
+    display: flex;
+    list-style-type: none;
+    gap: 2rem
+}
 .nav-left-footer svg path{
     fill: #fbfcfe;
 }
-.nav-left-footer ul li a{
+.nav-footer li a{
     color: #6c8294;
 }
 .footer-links {
@@ -128,3 +168,48 @@ footer{
         height: 30px;
     }
 }
+
+/* phone */
+@media (max-width: 600px) {
+    header{
+        margin: 0em;
+        padding: 3em 2em;
+    }
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        padding: 0em;
+        margin: 2em 0em;
+        font-size: 1.2em;
+    }
+    .sidebar{
+        display: none;
+        align-items: center;
+        background-color: #1b262f;
+        position: fixed;
+        padding: 2rem;
+        height: 100vh;
+        top: 0; 
+        right: 0;
+        left: 6em;
+    }
+    .nav-menu__demo-btn{
+        display: block;
+    }
+    .sidebar__active {
+        display: block;
+    }
+    .sidebar hr{
+        display: block;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .menu-close { 
+        display: block;
+    }
+    .demo-btn {
+        display: none;
+    }
+}
+

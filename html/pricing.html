@@ -12,16 +12,22 @@
   </head>
 
   <body>
-    <header>
+      <header>
         <div class="nav-left-header">
             <a href="../index.html"><img src="../img/shared/desktop/logo.svg" alt="PayAPI"></a>
-            <ul>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <nav id="sidebar" class="sidebar">
+              <button id="closeMenu" class="menu-close"><img src="../img/shared/mobile/close.svg" alt="close"></button>
+              <hr>
+              <ul class="nav-menu">
+                  <li><a href="pricing.html">Pricing</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+            <button class="nav-menu__demo-btn">Schedule a Demo</button>
+          </nav>
         </div>
-        <button>Schedule a Demo</button>
+        <button class="demo-btn">Schedule a Demo</button>
+        <button id="menu" class="menu-toggle"><img src="../img/shared/mobile/menu.svg" alt="open"></button>
     </header>
     <main>
         <div class="pricing-main">
@@ -113,6 +119,7 @@
         </div>
         <p hidden>Made by Titas K. J.</p>
     </footer>
+    <script src="../script/menu.js"></script>
   </body>
 
 </html>
