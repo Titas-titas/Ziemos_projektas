@@ -1,4 +1,4 @@
-.main-header__input input[type="submit"]:hover, .fourth-main__input input[type="submit"]:hover, .demo-btn:hover{
+.main-header__input input[type="submit"]:hover, .fourth-main__input input[type="submit"]:hover, .demo-btn:hover, .nav-menu__demo-btn:hover{
     background-color: #da6d97;
 }
 .first-main__text button:hover{
