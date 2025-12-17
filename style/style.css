@@ -13,7 +13,9 @@ body{
 h1,h2,h3{
     font-family: "DM Serif Display";
 }
-
+p{
+    line-height: 2;
+}
 a{
     text-decoration: none;
     font-weight: bold;
@@ -215,6 +217,20 @@ footer{
     }
     .demo-btn {
         display: none;
+    }
+
+    /* main footer */
+    .main-footer{
+        gap: 2em !important;
+        padding: 0em !important;
+        margin: 4em 2em;
+    }
+    .main-footer__input {
+        display: block !important;
+    }
+    .main-footer__input input{
+        margin: 2em auto;
+        padding: 1.20em;
     }
 
     /* footer */
