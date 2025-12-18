@@ -24,7 +24,7 @@
   color:#6c8294;
   font-size: 1em;
 }
-.price-card ul{
+.list-text ul{
     display: block;
     margin: 0;
 }
@@ -37,12 +37,13 @@
     padding: 0.7em;
     font-size: 1.1em;
 }
-.price-card div .price-card__active{
+.price-card__active{
     color: #36536b;
     list-style-image: url('/img/shared/desktop/icon-check.svg');
 }
-.price-card div .price-card__unactive{
+.price-card__unactive{
     color: #6c8294;
+    list-style: none;
 }
 .price-card button{
     background-color: #EDF3F8;
@@ -67,5 +68,41 @@
     }
     .price-card p{
         font-size: 1em;
+    }
+}
+
+
+/* phone */
+@media (max-width: 600px) {
+    .pricing-main h1{
+        margin: 1em;
+        font-size: 2rem;
+    }
+    .price-card h1{
+        font-size: 3.2em;
+        margin-bottom: 0.1em;
+    }
+    .price-card h3{
+        font-size: 1.5em;
+        margin: 0.5em 0em;
+    }
+    .price-card button{
+        padding: 1.3rem;
+        width: 175px;
+        font-size: 0.82em;
+        border-radius: 2.5em;
+    }
+    .pricing-main__cards {
+        display: block;
+    }
+    .list-text{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .price-card__active, .price-card__unactive{
+        display: inline-block !important;
+        text-align: left;
     }
 }

@@ -132,6 +132,7 @@ form input[type="checkbox"]{
     }
 }
 
+/* phone */
 @media (max-width: 600px) {
    .main__text h1 {
     margin: 1em 0.5em;
@@ -153,7 +154,6 @@ form input[type="checkbox"]{
   .form-filling__img-and-text h3 {
     font-size: 1.6em;
   }
-
   .form-filling__img-and-text div{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
