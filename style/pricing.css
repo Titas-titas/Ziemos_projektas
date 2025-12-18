@@ -1,12 +1,12 @@
 .pricing-main__cards {
   display: flex;
-  gap: 2rem;
+  gap: 2em;
   justify-content: space-around;
-  padding: 2rem;
+  padding: 2em;
 }
 .pricing-main h1{
     margin: 2em;
-    font-size: 3rem;
+    font-size: 3em;
     color: #36536b;
 }
 .price-card{
@@ -51,7 +51,7 @@
     border: 2px solid #36536b;
     margin: 2em;
     border-radius: 2em;
-    padding: 1rem;
+    padding: 1em;
     width: 150px;
 }
 
@@ -76,7 +76,7 @@
 @media (max-width: 600px) {
     .pricing-main h1{
         margin: 1em;
-        font-size: 2rem;
+        font-size: 2em;
     }
     .price-card h1{
         font-size: 3.2em;
@@ -87,7 +87,7 @@
         margin: 0.5em 0em;
     }
     .price-card button{
-        padding: 1.3rem;
+        padding: 1.3em;
         width: 175px;
         font-size: 0.82em;
         border-radius: 2.5em;

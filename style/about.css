@@ -1,23 +1,23 @@
 .about-main {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 3em;
   color: #36536b;
 }
 .about-main h1{
     margin: 2em 6em 0em 6em;
-    font-size: 3rem;
+    font-size: 3em;
 }
 .about-main__section {
     display: flex;
     align-items:start;
     justify-content: space-between;
-    gap: 4rem;
-    padding: 2rem 6rem;
+    gap: 4em;
+    padding: 2em 6em;
     margin: auto;
     max-width: 1000px;
 }
-.about-main__section h3{
+.about-main__section div h3{
     font-size: 1.7em;
     width: 165px;
 }
@@ -33,7 +33,7 @@
 .about-main__card{
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 2em;
     margin: auto;
 }
 .about-main__card div {
@@ -44,12 +44,12 @@
     border-bottom: 1px solid #6c8294;
 }
 .about-main__card h1 {
-    font-size: 2.5rem;
+    font-size: 2.5em;
     margin: 0em !important;
     color: #ba4270;
 }
 .about-main__card p {
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: bold;
     color: #6c8294;
 }
@@ -57,16 +57,48 @@
 @media (max-width:768px) {
     .about-main h1 {
         margin: 1em;
-        font-size: 2.7rem;
-        text-align: center;
+        font-size: 2.7em;
     }
     .about-main__section {
-        padding: 2rem 4rem;
+        padding: 2em 4em;
     }
     .about-main__card h1{
         text-align: start;
     }
     .about-main__card div{
         width: 25vw;
+    }
+}
+
+
+/* phone */
+@media (max-width: 600px) {
+    .about-main__section{
+        display: block;
+        text-align: center;
+        padding: 1em;
+    }
+    .about-main h1{
+        font-size: 1.8em;
+        text-align: center;
+    }
+    .about-main__section div h3{
+        margin: auto;
+        font-size: 1.6em;
+    }
+    .about-main__card {
+        display: inline-block;
+        border-top: 1px solid #6c8294;
+        border-bottom: 1px solid #6c8294;
+    }
+    .about-main__card div {
+        border: none;
+        width: 75vw;
+        text-align: center;
+        padding: 0.5em 0em;
+    }
+      .about-main__card h1 {
+        text-align: center !important;
+        font-size: 2.7em;
     }
 }

@@ -34,7 +34,7 @@ header{
 .nav-menu{
     display: flex;
     list-style-type: none;
-    gap: 2rem
+    gap: 2em
 }
 .nav-menu li{
     justify-content: center;
@@ -45,7 +45,7 @@ header{
     background-color: #ba4270;
     color: #fbfcfe;
     border-style: none;
-    padding: 1rem 1.5rem;
+    padding: 1em 1.5em;
     border-radius: 2em;
     width: 100%;
 }
@@ -53,7 +53,7 @@ header{
     background-color: #ba4270;
     color: #fbfcfe;
     border-style: none;
-    padding: 0.7rem 1.5rem;
+    padding: 0.7em 1.5em;
     border-radius: 2em;
     margin: 0em 1em;
     width: 175px;
@@ -85,15 +85,15 @@ header{
 .nav-left-header {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 2em;
 }
 /* main footer */
 .main-footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4rem 5rem;
-  gap: 4rem;
+  padding: 4em 5em;
+  gap: 4em;
 }
 .main-footer__input{
     display: flex;
@@ -125,12 +125,12 @@ footer{
 .nav-left-footer {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 2em;
 }
 .nav-footer{
     display: flex;
     list-style-type: none;
-    gap: 2rem
+    gap: 2em
 }
 .logo svg path{
     fill: #fbfcfe;
@@ -140,7 +140,7 @@ footer{
 }
 .footer-links {
     display: flex;
-    gap: 1.5rem;
+    gap: 1.5em;
     align-items:center;
     margin-left: 1em;
 }
@@ -152,7 +152,7 @@ footer{
         margin: 3em 2em;
     }
     .nav-left-header{
-        gap: 0rem
+        gap: 0em
     }
 
     /* footer */
@@ -194,7 +194,7 @@ footer{
         align-items: center;
         background-color: #1b262f;
         position: fixed;
-        padding: 2rem;
+        padding: 2em;
         height: 100vh;
         top: 0; 
         right: 0;
@@ -251,7 +251,7 @@ footer{
         margin: auto;
     }
     .footer-links{
-        gap: 2rem;
+        gap: 2em;
     }
 }
 
