@@ -6,6 +6,7 @@
     align-items: center;
     margin: 2em 9em;
     gap: 2em;
+    position: relative;
 }
 .main-header__get-started {
     display: flex;
@@ -42,14 +43,17 @@
 /* main */
 .second-main,
 .third-main{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 4em 5em;
-  gap: 4em;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4em 5em;
+    gap: 4em;
+  
 }
 
 .first-main{
+    position: relative;
     background-color: #1b262f;
     color: #fbfcfe;
     display: flex;
@@ -57,6 +61,7 @@
     align-items: center;
     padding: 4em 5em;
     gap: 4em;
+    overflow: hidden;
 }
 .second-main__text h2, .third-main__text h2, .main-footer__text h2{
     font-size: 2.3em;
@@ -65,13 +70,19 @@
 .first-main__text h2{
     font-size: 2.3em;
 }
+.first-main__text{
+    position: relative;
+    z-index: 1;
+}
 .first-main__imgs{
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   grid-template-rows: repeat(2, auto);
-   gap: 1em;
-   justify-items: center;
-   align-items: center;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 1em;
+    justify-items: center;
+    align-items: center;
+    z-index: 1;
 }
 .first-main__imgs svg{
     padding: 0.5em;
@@ -103,6 +114,27 @@
 .main-card{
     margin: 1em;
 }
+/* img circle */
+.main-header__circle-img {
+    position: absolute;
+    top: -270px;
+    right: -16vw;
+    z-index: -1;
+}
+.first-main__circle-img{
+    position: absolute;
+    z-index: 0;
+    top: -430px;
+    left: -255px;
+}
+.third-main__circle-img{
+    position: absolute;
+    z-index: -1;
+    top: 15px;
+    left: 65vw;
+    width: 50vw;
+}
+
 
 /* tablet */
 @media (max-width:768px) {
@@ -139,6 +171,20 @@
     }
     .main-card{
         margin: 0.5em;
+    }
+    /* img circle */
+    .main-header__circle-img {
+        top: -500px;
+        right: -20vw;
+        width: 103vw;
+    }
+    .first-main__circle-img{
+        top: -570px;
+        left: -2vw;
+        width: 103vw;
+    }
+    .third-main__circle-img {
+        display: none;
     }
 }
 
@@ -188,5 +234,16 @@
     }
     .main-header__input input[type="submit"], .main-footer__input input[type="submit"]{
         width: 100%;
+    }
+    /* img circle */
+    .main-header__circle-img {
+        top: -575px;
+        right: -20vw;
+        width: 130vw;
+    }
+    .first-main__circle-img{
+        top: -575px;
+        left: -15vw;
+        width: 130vw;
     }
 }

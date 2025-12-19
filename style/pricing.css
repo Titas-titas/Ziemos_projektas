@@ -55,6 +55,7 @@
     width: 150px;
 }
 
+/* tablet */
 @media (max-width:768px) {
     .pricing-main{
         text-align: center;

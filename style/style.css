@@ -53,7 +53,7 @@ header{
     background-color: #ba4270;
     color: #fbfcfe;
     border-style: none;
-    padding: 0.7em 1.5em;
+    padding: 1em 1.7em;
     border-radius: 2em;
     margin: 0em 1em;
     width: 175px;
@@ -121,11 +121,15 @@ footer{
     background-color: #1b262f;
     justify-content: space-between;
     padding: 2em 5em;
+    position: relative;
+    overflow: hidden;
 }
 .nav-left-footer {
     display: flex;
     align-items: center;
     gap: 2em;
+    position: relative;
+    z-index: 1;
 }
 .nav-footer{
     display: flex;
@@ -143,7 +147,23 @@ footer{
     gap: 1.5em;
     align-items:center;
     margin-left: 1em;
+    position: relative;
+    z-index: 1;
 }
+/* img circle */
+.footer__circle-img{
+    position: absolute;
+    z-index: 0;
+    top: -85px;
+    left: 65vw;
+}
+.header__circle-img{
+    position: absolute;
+    z-index: -1;
+    top: -560px;
+    left: 52vw;
+}
+
 
 /* tablet */
 @media (max-width:768px) {
@@ -173,6 +193,11 @@ footer{
         width: 27px;
         height: 27px;
     }
+    /* img circle */
+    .footer__circle-img{
+        top: -110px;
+        left: 50vw;
+    }
 }
 
 /* phone */
@@ -199,6 +224,12 @@ footer{
         top: 0; 
         right: 0;
         left: 6em;
+        z-index: 2;
+        overflow: hidden;
+    }
+    .menu-sidebar{
+        position: relative;
+        z-index: 1;
     }
     .nav-menu__demo-btn{
         display: block;
@@ -252,6 +283,23 @@ footer{
     }
     .footer-links{
         gap: 2em;
+    }
+    /* img circle */
+    .header__circle-img{
+        top: -605px;
+        left: 25vw;
+    }
+    .footer__circle-img{
+        top: 185px;
+        left: -15vw;
+        width: 130vw;
+    }
+    .sidebar__circle-img{
+        position: absolute;
+        top: -410px;
+        right: -13vw;
+        width: 130vw;
+        z-index: 0;
     }
 }
 
