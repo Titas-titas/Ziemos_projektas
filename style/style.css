@@ -163,6 +163,9 @@ footer{
     top: -560px;
     left: 52vw;
 }
+.sidebar__circle-img{
+    display: none;
+}
 
 
 /* tablet */
@@ -295,6 +298,7 @@ footer{
         width: 130vw;
     }
     .sidebar__circle-img{
+        display: inline;
         position: absolute;
         top: -410px;
         right: -13vw;
